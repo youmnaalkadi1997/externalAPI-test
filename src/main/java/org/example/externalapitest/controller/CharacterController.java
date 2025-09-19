@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/api/character")
 public class CharacterController {
 
-    private CharacterService characterService;
+   /* private CharacterService characterService;
     public CharacterController(CharacterService characterService) {
         this.characterService = characterService;
     }
@@ -31,4 +31,6 @@ public class CharacterController {
     public List<Character> getCharactersByStatus(@RequestParam String status) {
         return characterService.getCharactersByStatus(status);
     }
+
+    */
 }

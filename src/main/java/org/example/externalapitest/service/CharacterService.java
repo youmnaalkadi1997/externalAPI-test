@@ -11,18 +11,18 @@ import java.util.List;
 @Service
 public class CharacterService {
 
-    private final RestClient restClient;
+   /* private final RestClient restClient;
 
     public CharacterService(RestClient.Builder restClientBuilder) {
         this.restClient = restClientBuilder
-                .baseUrl("https://rickandmortyapi.com/api")
+                //.baseUrl("https://rickandmortyapi.com/api")
                 .build();
     }
 
     public List<Character> getCharacters() {
        List <Character> allCharacters =
                restClient.get()
-                       .uri("/character")
+                       .uri("https://rickandmortyapi.com/api/character")
                        .retrieve()
                        .body(MultiCharacters.class)
                        .results();
@@ -47,5 +47,5 @@ public class CharacterService {
                 .body(MultiCharacters.class)
                 .results();
         return characterList;
-    }
+    }*/
 }
